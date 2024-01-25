@@ -21,6 +21,15 @@ fn main() {
     // 10	split()	pub fn split<'a, P>(&'a self, pat: P) → Split<'a, P> , where P is pattern can be &str, char, or a closure that determines the split.	Returns an iterator over substrings of this string slice, separated by characters matched by a pattern.
     // 11	chars()	pub fn chars(&self) → Chars	Returns an iterator over the chars of a string slice.
 
-    //################ STRING LITERALS ################
+    //################ C STRING LITERALS ################
+    //C language Strings
+    //cstr::cstr -> std::ffi::CStr
+    //let test = cstr!(b"hello\xff");
 
+    //################ USING FORMAT MACRO ################
+    //format!("test");                             // => "test"
+    // format!("hello {}", "world!");               // => "hello world!"
+    // format!("x = {}, y = {val}", 10, val = 30);  // => "x = 10, y = 30"
+    // let (x, y) = (1, 2);
+    // format!("{x} + {y} = 3");                    // => "1 + 2 = 3"
 }
